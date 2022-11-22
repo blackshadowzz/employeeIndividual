@@ -10,27 +10,26 @@ How to open this project
 
 <hr>
 =>  database table
-	+ table Field
-		+ employees
-			- id
-			- first_name
-			- last_name
-			- fullname[ optional ]
-			- gender
-			- phone
-			- email
-			- address
-			- city
-			- province
-			- image_path
-			- position_id
++ employees
+	- id
+	- first_name
+	- last_name
+	- fullname[ optional ]
+	- gender
+	- phone
+	- email
+	- address
+	- city
+	- province
+	- image_path
+	- position_id
 
-		+ positions
-			- id
-			- name
-			- Roll
-			- department_id
-		+ department
-			- id
-			- name 
-			- description
++ positions
+	- id
+	- name
+	- Roll
+	- department_id
++ department
+	- id
+	- name 
+	- description
