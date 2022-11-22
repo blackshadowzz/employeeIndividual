@@ -128,7 +128,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="/" class="brand-link">
       <img src="/assets/images/logo.png" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">EMPLOYEE MS</span>
     </a>
@@ -238,9 +238,12 @@
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  {{-- <footer class="main-footer">
+  <footer class="main-footer d-flex justify-content-center h-10">
     <!-- To the right -->
-  </footer> --}}
+    <div>
+      <strong class="text-muted">Copyright &copy; <a href="https://github.com/blackshadowzz">Blackshadowzz</a>.</strong> All rights reserved.
+    </div>
+  </footer>
 </div>
 <!-- ./wrapper -->
 

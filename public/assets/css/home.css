@@ -1,0 +1,56 @@
+li{
+     text-decoration: none;
+     list-style-type: none;
+ }
+.main-img{
+     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/assets/images/index_back.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 93.5vh;
+
+ }
+ .footer{
+     background-color: aqua;
+     padding: 21px 0px;
+     text-align: center;
+     font-size: 20px;
+ }
+ .content-area{
+     height: 100%;
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .content{
+     text-align: center;
+ }
+ .content h1{
+     font-size: 70px;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .content p{
+     margin-top: 15px;
+     color: #ddd;
+     font-size: 25px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .content .button{
+     margin-top: 30px;
+     border-radius:10px ;
+     border: none;
+     padding: 15px 25px;
+     background-color: #2874A6 ;
+
+     font-size: 16px;
+     font-weight: 500;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .content .button:hover{
+     background-color: rgb(9, 194, 194);
+ }
+ .button a{
+     text-decoration: none;
+     color: white;
+ }
