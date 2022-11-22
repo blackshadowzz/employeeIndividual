@@ -10,6 +10,7 @@ How to open this project
 
 <hr>
 <h4>database table</h4>
+
 + employees
 	- id
 	- first_name
