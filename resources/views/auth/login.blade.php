@@ -4,6 +4,9 @@
 <div class="login">
     <div class="login-form">
         <div class="login-header">
+            <div class="login-head-img">
+                <img src="/assets/images/logo.png" width="100px" height="100%" alt="">
+            </div>
             <h4>{{ __('Sign In') }}</h4>
         </div>
         <div class="flex">

@@ -5,6 +5,8 @@
      height: 100px;
      width: 100px;
 }
+
+/* Login form */
 .button-login a{
      text-align: center;
 }
@@ -23,6 +25,9 @@
      border-radius: 10px 10px 0px 0px ;
      background-color: aqua;
      margin-bottom: 40px;
+}
+.login-head-img{
+     
 }
 .login-body{
      justify-content: center;
