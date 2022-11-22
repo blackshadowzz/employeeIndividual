@@ -9,7 +9,7 @@ How to open this project
 5. Run command: php artisan serve 
 
 <hr>
-=>  database table
+<h4>database table</h4>
 + employees
 	- id
 	- first_name
