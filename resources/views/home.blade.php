@@ -56,7 +56,7 @@
     
      </div>
      
-     <div>
+     {{-- <div>
           <table class="table table-bordered mt-4">
                <tr>
                     <th>Dep ID</th>
@@ -66,7 +66,7 @@
                     <th>Emp ID</th>
                     <th>Name</th>
                </tr>
-               {{-- @foreach($dep as $d)
+               @foreach($dep as $d)
                     <tr>
                          <td>{{ $d->id }}</td>
                          <td>{{ $d->department_name }}</td>
@@ -75,7 +75,37 @@
                          <td>{{ $d->id }}</td>
                          <td>{{ $d->id }}</td>
                     </tr>
-               @endforeach --}}
+               @endforeach
           </table>
+     </div> --}}
+     <div class="mt-3">
+          <div class=" d-flex justify-content-center g-4">
+          @foreach ($emp as $e)
+         
+               <div class="emp-pro-card  mr-3 ml-3">
+                    <div class="emp-card-pro shadow">
+                      <div class="card h-100">
+                        <img src="/storage/employees/profile/{{ $e->image_path }}" 
+                              class="card-img-top" alt="">
+                        <div class="card-body text-center justify-content-center">
+                          <h5 class="emp-card-title ">{{ $e->first_name }} {{ $e->last_name }}</h5>
+                          <p class="card-text">{{ $e->Positions->position_name }}</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Cr: {{ $e->created_at->format('d-M-Y') }} | Up: {{ $e->updated_at->format('d-M-Y') }}</small>
+                        </div>
+                      </div>
+                    </div>
+               </div>
+          
+          
+          @endforeach
+
      </div>
+          <div class="d-flex justify-content-center mt-2">
+               {{ $emp->links('pagination::bootstrap-4') }}
+          </div>
+          
+     </div>
+
 @endsection

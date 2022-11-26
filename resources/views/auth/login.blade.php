@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="login">
+{{-- <div class="login">
     <div class="login-form">
         <div class="login-header">
             <div class="login-head-img">
@@ -14,7 +14,7 @@
                 <form class="form" action="{{ route('login') }}" method="post">
                     @csrf
                     <div class="div-input">
-                        <input class="input form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus type="email" id="email" name="email" placeholder="Email" >
+                        <input class="input form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" required autocomplete="email" autofocus type="email" id="email" name="email" placeholder="Email" >
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -64,7 +64,7 @@
         </div>
         
     </div>
-</div>
+</div> --}}
 <br>
 {{-- <div class="container">
     <div class="row justify-content-center">

@@ -17,13 +17,13 @@ class EmployeeController extends Controller
      */
     public function index(Request $re)
     {
-        $emp=Employee::with('Positions')->paginate(8);
+        $emp=Employee::with('Positions')->paginate(5);
         $count= Employee::count();
         if($re->query('search')){
             $emp = Employee::where('first_name','LIKE','%'.$re->query('search').'%')
             ->orWhere('last_name','LIKE','%'.$re->query('search').'%')
             ->orWhere('email','LIKE','%'.$re->query('search').'%')
-            ->orWhere('phone','LIKE','%'.$re->query('search').'%')->with('Positions')->paginate(8);
+            ->orWhere('phone','LIKE','%'.$re->query('search').'%')->with('Positions')->paginate(5);
         }
         $pos=Positions::get(['id','position_name']);
             return view('employees.index',compact('emp','pos','count'));

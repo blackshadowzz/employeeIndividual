@@ -144,3 +144,20 @@ div .button:hover{
 .detail-side-left h5{
      font-weight: 600;
 }
+
+/* employee profile card */
+.card-img-top{
+     align-items: center;
+     text-align: center;
+     margin: auto;
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     padding: 10px;
+}
+.emp-card-title{
+     text-align: center;
+}
+.emp-pro-card{
+     width: 300px;
+}

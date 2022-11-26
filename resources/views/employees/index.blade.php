@@ -51,22 +51,18 @@
   </div>
  </div>
   <div class="table">
-     <table class="table table-bordered table-sm table-striped table-hover shadow mt-3 ">
+     <table class="table table-sm table-striped table-hover shadow mt-3 ">
           <thead class="table-dark">
                <tr>
-                    <th>ID</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
+                    <th>Fullname</th>
                     <th>Gender</th>
                     <th>DoB</th>
                     <th>Phone</th>
-                    <th>Email</th>
                     <th>Address</th>
                     <th>City</th>
                     <th>Province</th>
                     <th>Position</th>
-                    <th>Photo</th>
-                    <th>Actions</th>
+                    <th style="width: 9%">Actions</th>
                </tr>
           </thead>
           <tbody>
@@ -74,21 +70,31 @@
                @foreach ($emp as $em )
                <tr>
                     
-                    <td>{{ $em->id }}</td>
-                    <td>{{ $em->first_name }}</td>
-                    <td>{{ $em->last_name }}</td>
+                    <td>
+                         <div class="d-flex align-items-center">
+                           <img
+                               src="/storage/employees/profile/{{ $em->image_path }}"
+                               alt=""
+                               style="width: 80px; height: 80px"
+                               class="rounded-circle"
+                               />
+                           <div class="ms-3">
+                             <p class="fw-bold mb-1">{{ $em->first_name }} {{ $em->last_name }}</p>
+                             <p class="text-muted mb-0">{{ $em->email }}</p>
+                           </div>
+                         </div>
+                       </td>
                     <td>{{ $em->gender }}</td>
                     <td>{{ $em->dob }}</td>
                     <td>{{ $em->phone }}</td>
-                    <td>{{ $em->email }}</td>
                     <td>{{ $em->address }}</td>
                     <td>{{ $em->city }}</td>
                     <td>{{ $em->province }}</td>
                     {{-- <td>{{ $em->position_id }}</td> --}}
                     <td>{{ $em->Positions->position_name }}</td>
-                    <td style="width: 50px">
+                    {{-- <td style="width: 50px">
                          <img class="rounded-circle" src="/storage/employees/profile/{{ $em->image_path }}" width="75px" height="75px" alt="image" >
-                    </td>
+                    </td> --}}
                     <td>
                          <form action="/employees/{{$em->id}}" method="post" class="d-flex justify-content-between">
                               @csrf
