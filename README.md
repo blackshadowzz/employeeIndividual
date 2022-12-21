@@ -4,8 +4,9 @@
 How to open this project 
 1. Run command: composer install
 2. Run command: config .env file and database 
-4. Run command: php artisan migrate 
-5. Run command: php artisan serve 
+3. Run command: php artisan migrate 
+4. Run command: php artisan serve 
+5. run command: npm run dev
 
 <hr>
 <h4>database table</h4>
